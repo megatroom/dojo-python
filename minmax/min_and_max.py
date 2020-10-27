@@ -1,7 +1,7 @@
 
-def high_and_low(list):
-    highest = None
-    lowest = None
+def min_and_max(list):
+    highest = list[0]
+    lowest = list[0]
     for n in list:
         if not highest or n > highest:
             highest = n
@@ -13,4 +13,4 @@ def high_and_low(list):
 if __name__ == "__main__":
     numbers = input("Digite os números separados por vírgula: ")
     list = [int(n) for n in numbers.split(",")]
-    print(high_and_low(list))
+    print(min_and_max(list))

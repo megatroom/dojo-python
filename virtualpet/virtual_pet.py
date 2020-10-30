@@ -19,15 +19,16 @@ class VirtualPet:
             print("Acordei :)")
 
 
-pet = VirtualPet()
-option = ""
-while option != "s":
-    print()
-    option = input("(C)omer, (A)cordar, (D)ormir ou (S)air: ").lower()
-    if option == "c":
-        food_name = input("Comida: ")
-        pet.eat(food_name)
-    elif option == "a":
-        pet.wake_up()
-    elif option == "d":
-        pet.sleep()
+if __name__ == "__main__":
+    pet = VirtualPet()
+    option = ""
+    while option != "s":
+        print()
+        option = input("(C)omer, (A)cordar, (D)ormir ou (S)air: ").lower()
+        if option == "c":
+            food_name = input("Comida: ")
+            pet.eat(food_name)
+        elif option == "a":
+            pet.wake_up()
+        elif option == "d":
+            pet.sleep()

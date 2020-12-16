@@ -42,7 +42,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'courses.apps.CoursesConfig',
     'products.apps.ProductsConfig',
     'rest_framework',
     'rest_framework_swagger'
